@@ -1,20 +1,20 @@
 
 exports.min = function min (array) {
-  if (array === undefined || array === []) {
+  if (array === undefined || array[0] === undefined) {
     return 0;
   }
   return array.sort(function(a, b){return a - b})[0];
 }
 
 exports.max = function max (array) {
-  if (array === undefined || array === []) {
+  if (array === undefined || array[0] === undefined) {
     return 0;
   }
   return array.sort(function(a, b){return b - a})[0];
 }
 
 exports.avg = function avg (array) {
-  if (array === undefined || array === []) {
+  if (array === undefined || array[0] === undefined) {
     return 0;
   }
   let sum = 0;
